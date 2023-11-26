@@ -1,0 +1,5 @@
+FROM dorowu/ubuntu-desktop-lxde-vnc:bionic
+
+RUN add-apt-repository ppa:obsproject/obs-studio
+RUN apt-get update
+RUN apt-get install -y obs-studio
